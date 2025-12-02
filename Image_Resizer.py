@@ -22,6 +22,7 @@ user_size=input("What size of photo do you like? S, M, or L? Please put the lett
 # Based on size, call correct resize and show image
 if user_size=="s":
     # Depending on the user's choice, they are shown different images of the dog.
+    # resize function accepts location of photo and size (width, height)
     image_obj=cv2.resize(photo, (300,200))
     cv2.imshow("Small_Dog", image_obj)
 elif user_size=="m":
